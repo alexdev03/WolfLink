@@ -1,0 +1,11 @@
+{
+  "domain": "wolflink",
+  "version": "0.0.1",
+  "name": "Wolf SmartSet Service 2",
+  "codeowners": ["@adamkrol93", "@mtielen"],
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/wolflink",
+  "iot_class": "cloud_polling",
+  "loggers": ["wolf_comm"],
+  "requirements": ["wolf-comm @ git+https://github.com/alexdev03/wolf-comm.git@master"]
+}
