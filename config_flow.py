@@ -56,6 +56,7 @@ class WolfLinkConfigFlow(ConfigFlow, domain=DOMAIN):
             else:
                 self.username = user_input[CONF_USERNAME]
                 self.password = user_input[CONF_PASSWORD]
+                self.locale = user_input[LOCALE]
                 return await self.async_step_device()
         return self.async_show_form(
             step_id="user", data_schema=USER_SCHEMA, errors=errors
@@ -82,7 +83,7 @@ class WolfLinkConfigFlow(ConfigFlow, domain=DOMAIN):
                     DEVICE_NAME: device_name,
                     DEVICE_GATEWAY: system[0].gateway,
                     DEVICE_ID: device_id,
-                    LOCALE: user_input[LOCALE],
+                    LOCALE: self.locale,
                 },
             )
 
