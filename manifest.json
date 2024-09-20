@@ -7,5 +7,5 @@
   "documentation": "https://www.home-assistant.io/integrations/wolflink",
   "iot_class": "cloud_polling",
   "loggers": ["wolf_comm"],
-  "requirements": ["wolf-comm @ git+https://github.com/alexdev03/wolf-comm.git@master"]
+  "requirements": ["wolf-comm @ git+https://github.com/alexdev03/wolf-comm.git@dev"]
 }
